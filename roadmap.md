@@ -1,4 +1,4 @@
 # Portfolio roadmap
-- [ ] Create light design system and portfolio pages.
-- [ ] Add supplied biography, education, skills, projects, achievements and contact links.
-- [ ] Verify navigation, contact actions and page layouts.
+- [x] Create light design system and portfolio pages.
+- [x] Add supplied biography, education, skills, projects, achievements and contact links.
+- [x] Verify navigation, contact actions and page layouts.

@@ -98,6 +98,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      { src: "https://cdn.botpress.cloud/webchat/v5.0/inject.js" },
+      { src: "https://files.bpcontent.cloud/2026/10/13/18/20261013180537-F98JIBHN.js", defer: true },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,

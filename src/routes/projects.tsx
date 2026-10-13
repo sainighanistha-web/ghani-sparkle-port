@@ -1,0 +1,4 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { ProjectsSection, PageIntro, ContactBand, portfolioHead } from '@/components/portfolio';
+export const Route = createFileRoute('/projects')({ head: () => portfolioHead('Projects', 'Explore Ghanisth Saini’s in-progress website and conversational chatbot projects.'), component: Projects });
+function Projects() { return <><PageIntro label="Ideas into action" title="My projects.">Learning becomes meaningful when you build something with it. These are the ideas I’m currently exploring.</PageIntro><ProjectsSection standalone /><ContactBand /></>; }

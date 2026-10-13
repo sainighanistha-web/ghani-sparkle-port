@@ -1,0 +1,4 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { PageIntro, ContactOptions, portfolioHead } from '@/components/portfolio';
+export const Route = createFileRoute('/contact')({ head: () => portfolioHead('Contact', 'Connect with Ghanisth Saini by phone, GitHub, or LinkedIn to discuss ideas and opportunities.'), component: Contact });
+function Contact() { return <><PageIntro label="Let’s connect" title="Hello could be the start of something.">Whether it’s a project idea, a learning opportunity, or a conversation about technology, I’d love to connect.</PageIntro><ContactOptions /></>; }

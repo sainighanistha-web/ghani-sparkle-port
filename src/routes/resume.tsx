@@ -1,0 +1,6 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { ArrowDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { PageIntro, ResumeHighlights, ContactBand, portfolioHead, resumeUrl } from '@/components/portfolio';
+export const Route = createFileRoute('/resume')({ head: () => portfolioHead('Resume', 'Ghanisth Saini’s resume: education at JECRC University, programming and business skills, hackathon achievements, and languages.'), component: Resume });
+function Resume() { return <><PageIntro label="Resume" title="My story on one page.">A quick look at my background — education, skills, and the hackathon journey behind this portfolio.</PageIntro><section className="section"><div className="site-container"><figure className="resume-figure"><img src={resumeUrl} alt="Resume of Ghanisth Saini: profile, skills, work experience, education, achievements and languages" width={1408} height={768} /><figcaption className="resume-caption">Prepared by Ghanisth Saini · JECRC University</figcaption></figure><div className="resume-actions resume-actions-center"><Button asChild variant="portfolio" size="lg"><a href={resumeUrl} download>Download resume <ArrowDown /></a></Button></div></div></section><ResumeHighlights /><ContactBand /></>; }
